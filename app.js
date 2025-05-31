@@ -18,6 +18,8 @@ function renderGames(games) {
       <p><strong>Platform:</strong> ${game.platform}</p>
       <p><strong>Brand:</strong> ${game.brand}</p>
       <p><strong>Region:</strong> ${game.region}</p>
+      <p><strong>Genre:</strong> ${game.genre}</p>
+      <p><strong>Condition:</strong> ${game.condition}</p>
       <p><strong>Sold for:</strong> ${game.price}</p>
       <p><strong>Sold on:</strong> ${game.date_sold}</p>
     `;
@@ -31,12 +33,16 @@ function filterGames() {
   const consoleFilter = document.getElementById('consoleSelect').value;
   const brandFilter = document.getElementById('brandSelect').value;
   const regionFilter = document.getElementById('regionSelect').value;
+  const genreFilter = document.getElementById('genreSelect').value;
+  const conditionFilter = document.getElementById('conditionSelect').value;
 
   let filtered = allGames.filter(game =>
-    (game.title.toLowerCase().includes(searchInput)) &&
+    game.title.toLowerCase().includes(searchInput) &&
     (!consoleFilter || game.platform === consoleFilter) &&
     (!brandFilter || game.brand === brandFilter) &&
-    (!regionFilter || game.region === regionFilter)
+    (!regionFilter || game.region === regionFilter) &&
+    (!genreFilter || game.genre === genreFilter) &&
+    (!conditionFilter || game.condition === conditionFilter)
   );
 
   if (sortOption === 'price') {
@@ -54,39 +60,32 @@ fetch('games.json')
     allGames = games;
     renderGames(allGames);
 
-    const brandSet = new Set();
-    const consoleSet = new Set();
-    const regionSet = new Set();
+    const brands = new Set();
+    const consoles = new Set();
+    const regions = new Set();
+    const genres = new Set();
 
     games.forEach(g => {
-      brandSet.add(g.brand);
-      consoleSet.add(g.platform);
-      regionSet.add(g.region);
+      brands.add(g.brand);
+      consoles.add(g.platform);
+      regions.add(g.region);
+      genres.add(g.genre);
     });
 
-    const brandSelect = document.getElementById('brandSelect');
-    brandSet.forEach(b => {
-      const opt = document.createElement('option');
-      opt.value = b;
-      opt.textContent = b;
-      brandSelect.appendChild(opt);
-    });
+    const fillSelect = (id, values) => {
+      const sel = document.getElementById(id);
+      values.forEach(val => {
+        const opt = document.createElement('option');
+        opt.value = val;
+        opt.textContent = val;
+        sel.appendChild(opt);
+      });
+    };
 
-    const consoleSelect = document.getElementById('consoleSelect');
-    consoleSet.forEach(c => {
-      const opt = document.createElement('option');
-      opt.value = c;
-      opt.textContent = c;
-      consoleSelect.appendChild(opt);
-    });
-
-    const regionSelect = document.getElementById('regionSelect');
-    regionSet.forEach(r => {
-      const opt = document.createElement('option');
-      opt.value = r;
-      opt.textContent = r;
-      regionSelect.appendChild(opt);
-    });
+    fillSelect('brandSelect', brands);
+    fillSelect('consoleSelect', consoles);
+    fillSelect('regionSelect', regions);
+    fillSelect('genreSelect', genres);
   })
   .catch(err => {
     document.getElementById('gameGrid').innerHTML = 'Failed to load data.';
@@ -99,4 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('consoleSelect').addEventListener('change', filterGames);
   document.getElementById('brandSelect').addEventListener('change', filterGames);
   document.getElementById('regionSelect').addEventListener('change', filterGames);
+  document.getElementById('genreSelect').addEventListener('change', filterGames);
+  document.getElementById('conditionSelect').addEventListener('change', filterGames);
 });
