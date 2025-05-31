@@ -9,6 +9,17 @@
 </head>
 <body>
   <h1>Rare Game Price Guide</h1>
+  <div style="margin-bottom: 1rem; text-align: center;">
+    <input type="text" id="searchInput" placeholder="Search by title or platform" style="padding: 0.5rem; width: 50%; max-width: 300px;" />
+    <select id="consoleSelect" style="padding: 0.5rem; margin-left: 1rem;">
+      <option value="">All Consoles</option>
+    </select>
+    <select id="sortSelect" style="padding: 0.5rem; margin-left: 1rem;">
+      <option value="">Sort by</option>
+      <option value="price">Highest Price</option>
+      <option value="date">Most Recent</option>
+    </select>
+  </div>
   <div class="grid" id="gameGrid">Loading...</div>
   <script src="app.js"></script>
 </body>
