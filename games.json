@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Suikoden II",
+    "platform": "PlayStation",
+    "price": "\u00a3180.00",
+    "date_sold": "2024-05-12",
+    "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r6f.jpg"
+  },
+  {
+    "title": "Silent Hill",
+    "platform": "PlayStation",
+    "price": "\u00a395.00",
+    "date_sold": "2024-05-10",
+    "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r64.jpg"
+  },
+  {
+    "title": "Castlevania Chronicles",
+    "platform": "PlayStation",
+    "price": "\u00a3150.00",
+    "date_sold": "2024-05-08",
+    "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r6c.jpg"
+  }
+]
