@@ -3,39 +3,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rare Game Price Guide</title>
+  <title>Rare Price Guide - Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <h1>Rare Game Price Guide</h1>
-  <div style="margin-bottom: 1rem; text-align: center;">
-    <input type="text" id="searchInput" placeholder="Search by title" style="padding: 0.5rem; width: 35%; max-width: 300px;" />
-    <select id="brandSelect" style="padding: 0.5rem;">
-      <option value="">All Brands</option>
-    </select>
-    <select id="regionSelect" style="padding: 0.5rem;">
-      <option value="">All Regions</option>
-    </select>
-    <select id="consoleSelect" style="padding: 0.5rem;">
-      <option value="">All Consoles</option>
-    </select>
-    <select id="genreSelect" style="padding: 0.5rem;">
-      <option value="">All Genres</option>
-    </select>
-    <select id="conditionSelect" style="padding: 0.5rem;">
-      <option value="">All Conditions</option>
-      <option value="Boxed">Boxed</option>
-      <option value="Loose">Loose</option>
-      <option value="With Manual">With Manual</option>
-    </select>
-    <select id="sortSelect" style="padding: 0.5rem;">
-      <option value="">Sort by</option>
-      <option value="price">Highest Price</option>
-      <option value="date">Most Recent</option>
-    </select>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-xl mx-auto text-center">
+    <h1 class="text-3xl font-bold mb-6">Rare Price Guide</h1>
+    <div class="grid gap-4">
+      <a href="games.html" class="block bg-white shadow rounded p-4 text-xl hover:bg-blue-100">🎮 Rare Games</a>
+      <a href="toys.html" class="block bg-white shadow rounded p-4 text-xl hover:bg-blue-100">🧸 Rare Toys</a>
+      <a href="boardgames.html" class="block bg-white shadow rounded p-4 text-xl hover:bg-blue-100">🎲 Rare Board Games</a>
+    </div>
   </div>
-  <div class="grid" id="gameGrid">Loading...</div>
-  <script src="app.js"></script>
 </body>
 </html>

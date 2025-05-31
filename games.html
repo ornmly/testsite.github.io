@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rare Games</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+<body class="bg-gray-100 p-4">
+  <h1 class="text-3xl font-bold mb-4">🎮 Rare Games</h1>
+  <div class="mb-4 flex flex-col sm:flex-row gap-2">
+    <select id="brandSelect" class="p-2 border rounded w-full sm:w-auto">
+      <option value="">Select Brand</option>
+    </select>
+    <select id="consoleSelect" class="p-2 border rounded w-full sm:w-auto">
+      <option value="">Select Console</option>
+    </select>
+    <select id="genreSelect" class="p-2 border rounded w-full sm:w-auto">
+      <option value="">Select Genre</option>
+    </select>
+    <input type="text" id="searchInput" class="p-2 border rounded w-full sm:w-auto" placeholder="Search title..." />
+  </div>
+  <div id="gameList" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+</body>
+</html>
