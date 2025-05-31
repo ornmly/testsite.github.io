@@ -4,20 +4,83 @@
     "platform": "PlayStation",
     "price": "\u00a3180.00",
     "date_sold": "2024-05-12",
-    "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r6f.jpg"
+    "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r6f.jpg",
+    "console_name": "PlayStation"
   },
   {
     "title": "Silent Hill",
     "platform": "PlayStation",
     "price": "\u00a395.00",
     "date_sold": "2024-05-10",
-    "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r64.jpg"
+    "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r64.jpg",
+    "console_name": "PlayStation"
   },
   {
     "title": "Castlevania Chronicles",
     "platform": "PlayStation",
     "price": "\u00a3150.00",
     "date_sold": "2024-05-08",
-    "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r6c.jpg"
+    "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r6c.jpg",
+    "console_name": "PlayStation"
+  },
+  {
+    "title": "Final Fantasy VII",
+    "platform": "PlayStation",
+    "brand": "Sony",
+    "region": "PAL",
+    "genre": "RPG",
+    "condition": "Boxed",
+    "price": "\u00a3120.00",
+    "date_sold": "2024-11-21",
+    "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q9a.jpg",
+    "console_name": "PlayStation"
+  },
+  {
+    "title": "Panzer Dragoon Saga",
+    "platform": "Sega Saturn",
+    "brand": "Sega",
+    "region": "PAL",
+    "genre": "RPG",
+    "condition": "Boxed",
+    "price": "\u00a3650.00",
+    "date_sold": "2024-10-01",
+    "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2wm1.jpg",
+    "console_name": "Sega Saturn"
+  },
+  {
+    "title": "Castlevania: Symphony of the Night",
+    "platform": "PlayStation",
+    "brand": "Sony",
+    "region": "NTSC",
+    "genre": "Action",
+    "condition": "With Manual",
+    "price": "\u00a3200.00",
+    "date_sold": "2024-12-05",
+    "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tmu.jpg",
+    "console_name": "PlayStation"
+  },
+  {
+    "title": "Conker's Bad Fur Day",
+    "platform": "Nintendo 64",
+    "brand": "Nintendo",
+    "region": "PAL",
+    "genre": "Platformer",
+    "condition": "Loose",
+    "price": "\u00a3110.00",
+    "date_sold": "2024-09-18",
+    "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ubv.jpg",
+    "console_name": "Nintendo 64"
+  },
+  {
+    "title": "Rule of Rose",
+    "platform": "PlayStation 2",
+    "brand": "Sony",
+    "region": "PAL",
+    "genre": "Horror",
+    "condition": "Boxed",
+    "price": "\u00a3320.00",
+    "date_sold": "2025-01-12",
+    "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2o1f.jpg",
+    "console_name": "PlayStation 2"
   }
 ]
