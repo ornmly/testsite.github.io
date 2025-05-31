@@ -1,103 +1,88 @@
 
-let allGames = [];
-
-function renderGames(games) {
-  const grid = document.getElementById('gameGrid');
-  grid.innerHTML = '';
-  if (games.length === 0) {
-    grid.innerHTML = '<p>No games found.</p>';
-    return;
-  }
-
-  games.forEach(game => {
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.innerHTML = `
-      <img src="${game.image_url}" alt="${game.title}" />
-      <h3>${game.title}</h3>
-      <p><strong>Platform:</strong> ${game.platform}</p>
-      <p><strong>Brand:</strong> ${game.brand}</p>
-      <p><strong>Region:</strong> ${game.region}</p>
-      <p><strong>Genre:</strong> ${game.genre}</p>
-      <p><strong>Condition:</strong> ${game.condition}</p>
-      <p><strong>Sold for:</strong> ${game.price}</p>
-      <p><strong>Sold on:</strong> ${game.date_sold}</p>
-    `;
-    grid.appendChild(card);
-  });
-}
-
-function filterGames() {
-  const searchInput = document.getElementById('searchInput').value.toLowerCase();
-  const sortOption = document.getElementById('sortSelect').value;
-  const consoleFilter = document.getElementById('consoleSelect').value;
-  const brandFilter = document.getElementById('brandSelect').value;
-  const regionFilter = document.getElementById('regionSelect').value;
-  const genreFilter = document.getElementById('genreSelect').value;
-  const conditionFilter = document.getElementById('conditionSelect').value;
-
-  let filtered = allGames.filter(game =>
-    game.title.toLowerCase().includes(searchInput) &&
-    (!consoleFilter || game.platform === consoleFilter) &&
-    (!brandFilter || game.brand === brandFilter) &&
-    (!regionFilter || game.region === regionFilter) &&
-    (!genreFilter || game.genre === genreFilter) &&
-    (!conditionFilter || game.condition === conditionFilter)
-  );
-
-  if (sortOption === 'price') {
-    filtered.sort((a, b) => parseFloat(b.price.replace(/[^\d.]/g, '')) - parseFloat(a.price.replace(/[^\d.]/g, '')));
-  } else if (sortOption === 'date') {
-    filtered.sort((a, b) => new Date(b.date_sold) - new Date(a.date_sold));
-  }
-
-  renderGames(filtered);
-}
-
-fetch('games.json')
-  .then(res => res.json())
-  .then(games => {
-    allGames = games;
-    renderGames(allGames);
-
-    const brands = new Set();
-    const consoles = new Set();
-    const regions = new Set();
-    const genres = new Set();
-
-    games.forEach(g => {
-      brands.add(g.brand);
-      consoles.add(g.platform);
-      regions.add(g.region);
-      genres.add(g.genre);
-    });
-
-    const fillSelect = (id, values) => {
-      const sel = document.getElementById(id);
-      values.forEach(val => {
-        const opt = document.createElement('option');
-        opt.value = val;
-        opt.textContent = val;
-        sel.appendChild(opt);
-      });
-    };
-
-    fillSelect('brandSelect', brands);
-    fillSelect('consoleSelect', consoles);
-    fillSelect('regionSelect', regions);
-    fillSelect('genreSelect', genres);
-  })
-  .catch(err => {
-    document.getElementById('gameGrid').innerHTML = 'Failed to load data.';
-    console.error(err);
-  });
-
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('searchInput').addEventListener('input', filterGames);
-  document.getElementById('sortSelect').addEventListener('change', filterGames);
-  document.getElementById('consoleSelect').addEventListener('change', filterGames);
-  document.getElementById('brandSelect').addEventListener('change', filterGames);
-  document.getElementById('regionSelect').addEventListener('change', filterGames);
-  document.getElementById('genreSelect').addEventListener('change', filterGames);
-  document.getElementById('conditionSelect').addEventListener('change', filterGames);
+  const url = window.location.pathname;
+  if (url.includes('games')) renderGames();
+  else if (url.includes('toys')) renderToys();
+  else if (url.includes('boardgames')) renderBoardGames();
 });
+
+async function renderGames() {
+  const gameList = document.getElementById('gameList');
+  const res = await fetch('games.json');
+  const games = await res.json();
+
+  const brandSelect = document.getElementById('brandSelect');
+  const consoleSelect = document.getElementById('consoleSelect');
+  const genreSelect = document.getElementById('genreSelect');
+  const searchInput = document.getElementById('searchInput');
+
+  function updateList() {
+    const brand = brandSelect?.value || '';
+    const console = consoleSelect?.value || '';
+    const genre = genreSelect?.value || '';
+    const search = searchInput?.value?.toLowerCase() || '';
+
+    const filtered = games.filter(g =>
+      (!brand || g.brand === brand) &&
+      (!console || g.console_name === console) &&
+      (!genre || g.genre === genre) &&
+      (!search || g.title.toLowerCase().includes(search))
+    );
+
+    gameList.innerHTML = filtered.map(g => `
+      <div class="bg-white p-4 rounded shadow flex flex-col gap-2">
+        <img src="${g.image_url}" class="w-full h-auto rounded" alt="Box art">
+        <h2 class="font-bold">${g.title}</h2>
+        <p>${g.console_name} (${g.region})</p>
+        <p><strong>${g.price}</strong> • Sold in last 90 days: ${g.sold_90_days}</p>
+        <div class="flex gap-2">
+          <a href="${g.buy_links.ebay}" target="_blank" class="text-blue-600 underline">eBay</a>
+          <a href="${g.buy_links.cex}" target="_blank" class="text-blue-600 underline">CEX</a>
+        </div>
+      </div>`).join('');
+  }
+
+  if (brandSelect && consoleSelect && genreSelect && searchInput) {
+    [brandSelect, consoleSelect, genreSelect, searchInput].forEach(input =>
+      input.addEventListener('change', updateList)
+    );
+  }
+
+  updateList();
+}
+
+async function renderToys() {
+  const toyList = document.getElementById('toyList');
+  const res = await fetch('toys.json');
+  const toys = await res.json();
+
+  toyList.innerHTML = toys.map(t => `
+    <div class="bg-white p-4 rounded shadow flex flex-col gap-2">
+      <img src="${t.image_url}" class="w-full h-auto rounded" alt="Toy">
+      <h2 class="font-bold">${t.title}</h2>
+      <p>${t.brand} - ${t.figure_line}</p>
+      <p><strong>${t.price}</strong> • Condition: ${t.condition}</p>
+      <div class="flex gap-2">
+        <a href="${t.buy_links.ebay}" target="_blank" class="text-blue-600 underline">eBay</a>
+        <a href="${t.buy_links.cex}" target="_blank" class="text-blue-600 underline">CEX</a>
+      </div>
+    </div>`).join('');
+}
+
+async function renderBoardGames() {
+  const boardGameList = document.getElementById('boardGameList');
+  const res = await fetch('boardgames.json');
+  const games = await res.json();
+
+  boardGameList.innerHTML = games.map(g => `
+    <div class="bg-white p-4 rounded shadow flex flex-col gap-2">
+      <img src="${g.image_url}" class="w-full h-auto rounded" alt="Board Game">
+      <h2 class="font-bold">${g.title}</h2>
+      <p>${g.publisher} - ${g.completeness}</p>
+      <p><strong>${g.price}</strong> • Condition: ${g.condition}</p>
+      <div class="flex gap-2">
+        <a href="${g.buy_links.ebay}" target="_blank" class="text-blue-600 underline">eBay</a>
+        <a href="${g.buy_links.cex}" target="_blank" class="text-blue-600 underline">CEX</a>
+      </div>
+    </div>`).join('');
+}
