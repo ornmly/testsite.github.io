@@ -1,0 +1,422 @@
+[
+  {
+    "title": "Rare Toy 1",
+    "brand": "Hasbro",
+    "figure_line": "Barbie",
+    "character": "Character 1",
+    "condition": "Loose",
+    "price": "\u00a3122.8",
+    "date_sold": "2025-05-16",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+1",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+1"
+    }
+  },
+  {
+    "title": "Rare Toy 2",
+    "brand": "Hasbro",
+    "figure_line": "Transformers",
+    "character": "Character 2",
+    "condition": "Boxed",
+    "price": "\u00a3130.28",
+    "date_sold": "2025-03-15",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+2",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+2"
+    }
+  },
+  {
+    "title": "Rare Toy 3",
+    "brand": "Hasbro",
+    "figure_line": "Barbie",
+    "character": "Character 3",
+    "condition": "Loose",
+    "price": "\u00a380.52",
+    "date_sold": "2025-05-28",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+3",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+3"
+    }
+  },
+  {
+    "title": "Rare Toy 4",
+    "brand": "Mattel",
+    "figure_line": "Star Wars",
+    "character": "Character 4",
+    "condition": "Loose",
+    "price": "\u00a362.96",
+    "date_sold": "2025-03-24",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+4",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+4"
+    }
+  },
+  {
+    "title": "Rare Toy 5",
+    "brand": "Mattel",
+    "figure_line": "Transformers",
+    "character": "Character 5",
+    "condition": "Loose",
+    "price": "\u00a361.87",
+    "date_sold": "2025-03-28",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+5",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+5"
+    }
+  },
+  {
+    "title": "Rare Toy 6",
+    "brand": "Mattel",
+    "figure_line": "Transformers",
+    "character": "Character 6",
+    "condition": "Loose",
+    "price": "\u00a380.32",
+    "date_sold": "2025-03-20",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+6",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+6"
+    }
+  },
+  {
+    "title": "Rare Toy 7",
+    "brand": "LEGO",
+    "figure_line": "Star Wars",
+    "character": "Character 7",
+    "condition": "New",
+    "price": "\u00a335.83",
+    "date_sold": "2025-04-05",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+7",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+7"
+    }
+  },
+  {
+    "title": "Rare Toy 8",
+    "brand": "Mattel",
+    "figure_line": "Action Man",
+    "character": "Character 8",
+    "condition": "New",
+    "price": "\u00a3100.86",
+    "date_sold": "2025-03-29",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+8",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+8"
+    }
+  },
+  {
+    "title": "Rare Toy 9",
+    "brand": "LEGO",
+    "figure_line": "Action Man",
+    "character": "Character 9",
+    "condition": "New",
+    "price": "\u00a3125.21",
+    "date_sold": "2025-05-02",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+9",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+9"
+    }
+  },
+  {
+    "title": "Rare Toy 10",
+    "brand": "Mattel",
+    "figure_line": "Transformers",
+    "character": "Character 10",
+    "condition": "Loose",
+    "price": "\u00a354.49",
+    "date_sold": "2025-03-09",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+10",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+10"
+    }
+  },
+  {
+    "title": "Rare Toy 11",
+    "brand": "Hasbro",
+    "figure_line": "Barbie",
+    "character": "Character 11",
+    "condition": "Loose",
+    "price": "\u00a353.78",
+    "date_sold": "2025-05-30",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+11",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+11"
+    }
+  },
+  {
+    "title": "Rare Toy 12",
+    "brand": "Mattel",
+    "figure_line": "Transformers",
+    "character": "Character 12",
+    "condition": "Boxed",
+    "price": "\u00a326.48",
+    "date_sold": "2025-03-04",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+12",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+12"
+    }
+  },
+  {
+    "title": "Rare Toy 13",
+    "brand": "Mattel",
+    "figure_line": "Barbie",
+    "character": "Character 13",
+    "condition": "New",
+    "price": "\u00a312.12",
+    "date_sold": "2025-03-28",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+13",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+13"
+    }
+  },
+  {
+    "title": "Rare Toy 14",
+    "brand": "Playmobil",
+    "figure_line": "Transformers",
+    "character": "Character 14",
+    "condition": "Boxed",
+    "price": "\u00a396.44",
+    "date_sold": "2025-03-28",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+14",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+14"
+    }
+  },
+  {
+    "title": "Rare Toy 15",
+    "brand": "Hasbro",
+    "figure_line": "Action Man",
+    "character": "Character 15",
+    "condition": "Loose",
+    "price": "\u00a3149.21",
+    "date_sold": "2025-05-21",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+15",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+15"
+    }
+  },
+  {
+    "title": "Rare Toy 16",
+    "brand": "Playmobil",
+    "figure_line": "Barbie",
+    "character": "Character 16",
+    "condition": "Loose",
+    "price": "\u00a333.4",
+    "date_sold": "2025-05-24",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+16",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+16"
+    }
+  },
+  {
+    "title": "Rare Toy 17",
+    "brand": "LEGO",
+    "figure_line": "Action Man",
+    "character": "Character 17",
+    "condition": "Loose",
+    "price": "\u00a393.82",
+    "date_sold": "2025-05-18",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+17",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+17"
+    }
+  },
+  {
+    "title": "Rare Toy 18",
+    "brand": "Hasbro",
+    "figure_line": "Transformers",
+    "character": "Character 18",
+    "condition": "Boxed",
+    "price": "\u00a3104.64",
+    "date_sold": "2025-05-08",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+18",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+18"
+    }
+  },
+  {
+    "title": "Rare Toy 19",
+    "brand": "LEGO",
+    "figure_line": "Barbie",
+    "character": "Character 19",
+    "condition": "Boxed",
+    "price": "\u00a3124.86",
+    "date_sold": "2025-05-05",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+19",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+19"
+    }
+  },
+  {
+    "title": "Rare Toy 20",
+    "brand": "Hasbro",
+    "figure_line": "Star Wars",
+    "character": "Character 20",
+    "condition": "New",
+    "price": "\u00a335.25",
+    "date_sold": "2025-05-18",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+20",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+20"
+    }
+  },
+  {
+    "title": "Rare Toy 21",
+    "brand": "LEGO",
+    "figure_line": "Barbie",
+    "character": "Character 21",
+    "condition": "Loose",
+    "price": "\u00a321.21",
+    "date_sold": "2025-04-09",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+21",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+21"
+    }
+  },
+  {
+    "title": "Rare Toy 22",
+    "brand": "LEGO",
+    "figure_line": "Barbie",
+    "character": "Character 22",
+    "condition": "Loose",
+    "price": "\u00a3140.85",
+    "date_sold": "2025-05-08",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+22",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+22"
+    }
+  },
+  {
+    "title": "Rare Toy 23",
+    "brand": "Mattel",
+    "figure_line": "Barbie",
+    "character": "Character 23",
+    "condition": "Loose",
+    "price": "\u00a394.64",
+    "date_sold": "2025-04-17",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+23",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+23"
+    }
+  },
+  {
+    "title": "Rare Toy 24",
+    "brand": "Hasbro",
+    "figure_line": "Barbie",
+    "character": "Character 24",
+    "condition": "Boxed",
+    "price": "\u00a374.07",
+    "date_sold": "2025-03-14",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+24",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+24"
+    }
+  },
+  {
+    "title": "Rare Toy 25",
+    "brand": "Hasbro",
+    "figure_line": "Action Man",
+    "character": "Character 25",
+    "condition": "New",
+    "price": "\u00a3116.31",
+    "date_sold": "2025-05-22",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+25",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+25"
+    }
+  },
+  {
+    "title": "Rare Toy 26",
+    "brand": "LEGO",
+    "figure_line": "Transformers",
+    "character": "Character 26",
+    "condition": "Boxed",
+    "price": "\u00a330.83",
+    "date_sold": "2025-04-22",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+26",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+26"
+    }
+  },
+  {
+    "title": "Rare Toy 27",
+    "brand": "Mattel",
+    "figure_line": "Action Man",
+    "character": "Character 27",
+    "condition": "Boxed",
+    "price": "\u00a3100.95",
+    "date_sold": "2025-03-12",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+27",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+27"
+    }
+  },
+  {
+    "title": "Rare Toy 28",
+    "brand": "Playmobil",
+    "figure_line": "Barbie",
+    "character": "Character 28",
+    "condition": "Boxed",
+    "price": "\u00a378.99",
+    "date_sold": "2025-04-10",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+28",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+28"
+    }
+  },
+  {
+    "title": "Rare Toy 29",
+    "brand": "Playmobil",
+    "figure_line": "Barbie",
+    "character": "Character 29",
+    "condition": "Boxed",
+    "price": "\u00a357.08",
+    "date_sold": "2025-04-02",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+29",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+29"
+    }
+  },
+  {
+    "title": "Rare Toy 30",
+    "brand": "Hasbro",
+    "figure_line": "Barbie",
+    "character": "Character 30",
+    "condition": "New",
+    "price": "\u00a3116.89",
+    "date_sold": "2025-03-22",
+    "image_url": "https://placehold.co/200x280?text=Toy",
+    "buy_links": {
+      "ebay": "https://www.ebay.co.uk/sch/i.html?_nkw=Rare+Toy+30",
+      "cex": "https://uk.webuy.com/search?stext=Rare+Toy+30"
+    }
+  }
+]
