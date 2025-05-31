@@ -5,7 +5,8 @@
     "price": "\u00a3180.00",
     "date_sold": "2024-05-12",
     "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r6f.jpg",
-    "console_name": "PlayStation"
+    "console_name": "PlayStation",
+    "sold_90_days": "N/A"
   },
   {
     "title": "Silent Hill",
@@ -13,7 +14,8 @@
     "price": "\u00a395.00",
     "date_sold": "2024-05-10",
     "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r64.jpg",
-    "console_name": "PlayStation"
+    "console_name": "PlayStation",
+    "sold_90_days": "N/A"
   },
   {
     "title": "Castlevania Chronicles",
@@ -21,7 +23,8 @@
     "price": "\u00a3150.00",
     "date_sold": "2024-05-08",
     "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r6c.jpg",
-    "console_name": "PlayStation"
+    "console_name": "PlayStation",
+    "sold_90_days": "N/A"
   },
   {
     "title": "Final Fantasy VII",
@@ -33,7 +36,8 @@
     "price": "\u00a3120.00",
     "date_sold": "2024-11-21",
     "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q9a.jpg",
-    "console_name": "PlayStation"
+    "console_name": "PlayStation",
+    "sold_90_days": "N/A"
   },
   {
     "title": "Panzer Dragoon Saga",
@@ -45,7 +49,8 @@
     "price": "\u00a3650.00",
     "date_sold": "2024-10-01",
     "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2wm1.jpg",
-    "console_name": "Sega Saturn"
+    "console_name": "Sega Saturn",
+    "sold_90_days": "N/A"
   },
   {
     "title": "Castlevania: Symphony of the Night",
@@ -57,7 +62,8 @@
     "price": "\u00a3200.00",
     "date_sold": "2024-12-05",
     "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tmu.jpg",
-    "console_name": "PlayStation"
+    "console_name": "PlayStation",
+    "sold_90_days": "N/A"
   },
   {
     "title": "Conker's Bad Fur Day",
@@ -69,7 +75,8 @@
     "price": "\u00a3110.00",
     "date_sold": "2024-09-18",
     "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ubv.jpg",
-    "console_name": "Nintendo 64"
+    "console_name": "Nintendo 64",
+    "sold_90_days": "N/A"
   },
   {
     "title": "Rule of Rose",
@@ -81,6 +88,7 @@
     "price": "\u00a3320.00",
     "date_sold": "2025-01-12",
     "image_url": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2o1f.jpg",
-    "console_name": "PlayStation 2"
+    "console_name": "PlayStation 2",
+    "sold_90_days": "N/A"
   }
 ]
