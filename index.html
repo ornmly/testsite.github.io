@@ -10,11 +10,17 @@
 <body>
   <h1>Rare Game Price Guide</h1>
   <div style="margin-bottom: 1rem; text-align: center;">
-    <input type="text" id="searchInput" placeholder="Search by title or platform" style="padding: 0.5rem; width: 50%; max-width: 300px;" />
-    <select id="consoleSelect" style="padding: 0.5rem; margin-left: 1rem;">
+    <input type="text" id="searchInput" placeholder="Search by title" style="padding: 0.5rem; width: 40%; max-width: 300px;" />
+    <select id="brandSelect" style="padding: 0.5rem;">
+      <option value="">All Brands</option>
+    </select>
+    <select id="regionSelect" style="padding: 0.5rem;">
+      <option value="">All Regions</option>
+    </select>
+    <select id="consoleSelect" style="padding: 0.5rem;">
       <option value="">All Consoles</option>
     </select>
-    <select id="sortSelect" style="padding: 0.5rem; margin-left: 1rem;">
+    <select id="sortSelect" style="padding: 0.5rem;">
       <option value="">Sort by</option>
       <option value="price">Highest Price</option>
       <option value="date">Most Recent</option>
